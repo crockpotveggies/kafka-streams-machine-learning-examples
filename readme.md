@@ -5,6 +5,8 @@ Examples will include analytic models built with TensorFlow, Keras, H2O, Python,
 
 ![Kafka Open Source Ecosystem for a Scalable Mission Critical Machine Learning Infrastructure](http://www.kai-waehner.de/blog/wp-content/uploads/2017/10/Apache_Kafka_Ecosystem_Kafka_Streams_Machine_Learning.png "Kafka Open Source Ecosystem for a Scalable Mission Critical Machine Learning Infrastructure")
 
+*This repository has been slimmed down by [@crockpotveggies](https://github.com/crockpotveggies)*
+
 
 ## Material (Blogs Posts, Slides, Videos)
 Here is some material about this topic if you want to read and listen to the theory instead of just doing hands-on:
@@ -19,11 +21,8 @@ Here is some material about this topic if you want to read and listen to the the
 
 ##### The following examples are already available including unit tests:
 
-* Deployment of a H2O GBM model to a Kafka Streams application for prediction of flight delays
-* Deployment of a H2O Deep Learning model to a Kafka Streams application for prediction of flight delays
-* Deployment of a pre-built TensorFlow CNN model for image recognition
+* Deployment of a pre-built Keras MLP model for IRIS classification
 * Deployment of a DL4J model to predict the species of Iris flowers
-* Deployment of a Keras model (trained with TensorFlow backend) using the Import Model API from DeepLearning4J
 
 **More sophisticated use cases around Kafka Streams and other technologies will be added over time in this or related Github project. Some ideas**:
 
@@ -60,21 +59,14 @@ The unit tests use some Kafka helper classes like EmbeddedSingleNodeKafkaCluster
 If you want to run an implementation of a main class in package **com.github.megachucky.kafka.streams.machinelearning**, you need to start a Kafka cluster (with at least one Zookeeper and one Kafka broker running) and also create the required topics. So check out the unit tests first.
 
 
-### Example 1 - Gradient Boosting with H2O.ai for Prediction of Flight Delays
 
-Detailed info in [h2o-gbm](h2o-gbm/readme.md)
-
-### Example 2 - Convolutional Neural Network (CNN) with TensorFlow for Image Recognition
-
-Detailed info in [tensorflow-image-recognition](tensorflow-image-recognition/readme.md)
-
-### Example 3 - Iris Prediction using a Neural Network with DeepLearning4J (DL4J)
+### Example 1 - Iris Prediction using a Neural Network with DeepLearning4J (DL4J)
 
 Detailed info in [dl4j-deeplearning-iris](dl4j-deeplearning-iris/readme.md)
 
-### Example 4 - Python + Keras + TensorFlow + DeepLearning4j
+### Example 2 - Iris Prediction using an Imported Keras Model and Deeplearning4J
 
-Detailed info in [tensorflow-kerasm](tensorflow-keras/readme.md)
+Detailed info in [dl4j-deeplearning-iris](dl4j-deeplearning-iris/readme.md)
 
 
 
